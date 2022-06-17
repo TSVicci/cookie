@@ -13,7 +13,7 @@ export default function Form({ addFormData }) {
 		setIsOpen(!isOpen);
 	};
 	//Step and validation
-	const [step, setStep] = useState(9);
+	const [step, setStep] = useState(0);
 	var validated = false;
 	const validate = () => {
 		let radioError = "Välj ett av svarsalternativen för att gå vidare.";
