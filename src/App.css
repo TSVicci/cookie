@@ -1,38 +1,183 @@
-.App {
+.logo{
+  width: 150px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container{
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+form{
+  margin-top: 20px;
+}
+
+/* Popup style */
+.popup-box {
+  position: absolute;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 40px;
+}
+
+label{
+  font-weight: bold;
+  padding-bottom: 25px;
+  font-size: 22px;
+}
+.radio-input{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.radio-input label{
+  font-weight: normal;
+  display: inline-block;
+}
+.radio-input input{
+  font-weight: normal;
+  display: inline-block;
+}
+.text-input{
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing:border-box;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.required::after{
+  content: "*";
+  color: red;
+}
+
+
+
+
+button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  width: 100%;
+
+}
+.sigButton{
+  width: 49%;
+}
+.save{
+  color: #7FB5A2;
+  border: 2px solid #7FB5A2;
+  background-color: #fff;
+}
+.clear{
+  color: #F3776F;
+  border: 2px solid #F3776F;
+  background-color: #fff;
+  float: right;
+}
+.sigCanvas{
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+.sigDiv{
+  width: 80vw;
+}
+.hidden-input{
+  display: none;
+}
+.undervisning-count-cont{
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 40px;
+}
+.slider-div{
+  margin-top: 40px;
+}
+.undervisning-count{
+  display: flex;
+  justify-content: center;
+  background-color: #F3776F;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  align-items: center;
+  
+
+}
+.undervisning-count h3{
   color: white;
+  font-size: 28px;
+  
+
+}
+.next-button{
+  margin-top: 25px;
+  background-color: #7FB5A2;
+  color: white;
+  border: none;
+}
+.prev-button{
+  margin-bottom: 25px;
+  background-color: white;
+  color: #7FB5A2;
+  border: 1px solid #7FB5A2;
+}
+.submit-button{
+  margin-top: 25px;
+  background-color: #7FB5A2;
+  color: white;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.information-popup-link{
+  cursor: pointer;
+  text-decoration: underline;
 }
