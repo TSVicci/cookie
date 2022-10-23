@@ -151,7 +151,7 @@ export default function Form({ addFormData }) {
           <>
             <div>
               <h1>Delta i Unga Drogförebyggares enskätundersökning</h1>
-              <p>
+              <p style={{ textAlign: "center" }}>
                 För att delta i enkäten behöver du leta mellan 13 och 25 år
                 gammal.
               </p>
