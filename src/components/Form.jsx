@@ -162,9 +162,8 @@ export default function Form({ addFormData }) {
         {step === 1 && (
           <>
             <label htmlFor="fraga1" className="required">
-              Hur ofta befinner du dig i en miljö där illegala droger används?
-              (med illegala droger menar vi ecstasy, cannabis, LSD, kokain,
-              heroin, opiater, amfetamin){" "}
+              Hur ofta befinner du dig i en miljö där illegala droger såsom
+              ecstasy, cannabis, LSD, kokain, opiater eller amfetamin används?
             </label>
             <div className="radio-input">
               <label>
@@ -174,7 +173,7 @@ export default function Form({ addFormData }) {
                   value="1"
                   onChange={handleChange}
                 />
-                letje dag
+                Varje dag
               </label>
               <label>
                 <input
@@ -183,7 +182,7 @@ export default function Form({ addFormData }) {
                   value="2"
                   onChange={handleChange}
                 />
-                letje vecka
+                Varje vecka
               </label>
               <label>
                 <input
@@ -192,7 +191,7 @@ export default function Form({ addFormData }) {
                   value="3"
                   onChange={handleChange}
                 />
-                letje månad
+                Varje månad
               </label>
               <label>
                 <input
