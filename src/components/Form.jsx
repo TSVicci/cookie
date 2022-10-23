@@ -4,6 +4,7 @@ import Popup from "./Popup";
 import SignatureCanvas from "react-signature-canvas";
 import { Slider } from "@mui/material";
 
+
 export default function Form({ addFormData }) {
   const [isOpen, setIsOpen] = useState(false);
   const togglePopup = () => {
@@ -13,8 +14,8 @@ export default function Form({ addFormData }) {
   const [step, setStep] = useState(0);
   let validated = false;
   const validate = () => {
-    let radioError = "Välj ett av sletsalternativen för att gå vidare.";
-    let sliderError = "Välj ett av sletsalternativen mellan ett och tio.";
+    let radioError = "Välj ett av svarsalternativen för att gå vidare.";
+    let sliderError = "Välj ett av svarsalternativen mellan ett och tio.";
     let firstNameError = "Fyll i förnamn";
     let lastNameError = "Fyll i förnamn";
 
@@ -152,7 +153,7 @@ export default function Form({ addFormData }) {
             <div>
               <h1>Delta i Unga Drogförebyggares enskätundersökning</h1>
               <p style={{ textAlign: "center" }}>
-                För att delta i enkäten behöver du leta mellan 13 och 25 år
+                För att delta i enkäten behöver du vara mellan 13 och 25 år
                 gammal.
               </p>
             </div>
@@ -223,7 +224,7 @@ export default function Form({ addFormData }) {
                 är?
                 <br />
                 <br />
-                Du kan sleta på en skala mellan ett och tio. Ett är väldigt
+                Du kan svara på en skala mellan ett och tio. Ett är väldigt
                 dålig och tio är väldigt bra.
               </label>
               <div className="slider-div">
@@ -301,7 +302,7 @@ export default function Form({ addFormData }) {
         {step === 4 && (
           <>
             <label htmlFor="fraga4" className="required">
-              Hur skulle du sleta om du blev erbjuden droger? (illegala droger){" "}
+              Hur skulle du svara om du blev erbjuden droger? (illegala droger){" "}
             </label>
             <div className="radio-input">
               <label>
@@ -359,7 +360,7 @@ export default function Form({ addFormData }) {
         {step === 5 && (
           <>
             <label htmlFor="fraga5" className="required">
-              Hur skulle du sleta om du blev erbjuden droger? (legala droger som
+              Hur skulle du svara om du blev erbjuden droger? (legala droger som
               tobak, snus och alkohol){" "}
             </label>
             <div className="radio-input">
@@ -626,7 +627,7 @@ export default function Form({ addFormData }) {
                   />
                 </div>
                 <label className="required" htmlFor="phone">
-                  letför tycker du att man ska leva drogfritt?
+                  Varför tycker du att man ska leva drogfritt?
                 </label>
                 <div>
                   <input
@@ -716,7 +717,7 @@ export default function Form({ addFormData }) {
               type="button"
               onClick={() => handleStep(step - 1)}
             >
-              Tilbaka
+              Tillbaka
             </button>
           </>
         )}
@@ -780,8 +781,8 @@ export default function Form({ addFormData }) {
                 inga bindningstider eller liknande som gör att du på något sätt
                 blir fast. Unga Drogförebyggare handlar om egen fri vilja,
                 intresse och engagemang! Som medlem i Unga Drogförebyggare
-                kommer du att själv kunna styra hur pass engagerad du vill leta.
-                Det betyder alltså att du kan leta en helt passiv medlem om du
+                kommer du att själv kunna styra hur pass engagerad du vill vara.
+                Det betyder alltså att du kan vara en helt passiv medlem om du
                 vill det. Vi spammar inte våra medlemmar med mejl och
                 information, du väljer helt själv vad du vill ta del av och
                 inte. Om du/ni vill engagera er har du/ni möjligheten att starta
@@ -790,7 +791,7 @@ export default function Form({ addFormData }) {
                 förening får ni lära er massor om föreningslivet och hur man
                 driver en egen verksamhet. Ni hittar på egna aktiviteter som ni
                 dessutom kan få pengar till att genomföra! Medlemskapet hos Unga
-                Drogförebyggare behöver förnyas letje årsskifte, det betyder att
+                Drogförebyggare behöver förnyas varje årsskifte, det betyder att
                 ditt medlemskap försvinner automatiskt vid årets slut. Om du
                 vill bli medlem igen efter årsskiftet kan du kontakta oss!
               </p>
